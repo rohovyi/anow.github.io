@@ -1,0 +1,16 @@
+header {
+    background-color: white;
+
+    &,
+    &>.container {
+        position: relative;
+    }
+}
+
+#canvas {
+    background-color: #2e2e2e;
+    font-family: $ff__main;
+    font-size  : 70px;
+    width      : $rate;
+    max-height : $rate;
+}

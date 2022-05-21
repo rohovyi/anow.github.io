@@ -1,0 +1,17 @@
+.form 
+    form#form.form__body(action='#')
+        .form__item 
+            label.form__label(for="formName") label
+            input#formName.form__input._req(type="text" name="name" placeholder="Your name*" required)
+        .form__item 
+            label.form__label(for="formEmail") label
+            input#formEmail.form__input._req._email(type="text" name="email" placeholder="Your e-mail*" required)
+        .form__item 
+            label.form__label(for="formMessage") 
+            textarea#formMessage.form__input(name="message" placeholder="Your message*")
+        button.__btn.__btn-orange(type='submit') Send
+        .form__item 
+            .file 
+                .file__item 
+                    input#formImage.file__input(type="file" name="image" accept='.jpg,.png,.gif')
+                #formPreview.file__preview

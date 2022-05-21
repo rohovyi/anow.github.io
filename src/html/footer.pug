@@ -1,0 +1,40 @@
+//- footer
+    .container
+        .__nav-footer
+            nav.__nav-footer-copy
+                p © 2022 Paper. Made with <span></span> Webflow, by Kreshnik Beqi
+
+            nav.__nav-footer-links
+                - var items = ['LinkedIn', 'Instagram', 'Dribbble', 'Twitter','Facebook']
+                - var links = ['linkedin.com', 'instagram.com', 'dribbble.com', 'twitter.com', 'facebook.com']
+                    each item, key in items 
+                        .__nav-footer-item: a(href='https://'+links[key] target='_blank')= item
+footer 
+    .container 
+        .__footer-logo 
+            span anow
+            address 
+                p +3(8050) 000 00 00 | M:
+                a(href="mailto:ivan@example.com") info@example.com
+        .__footer-menu 
+            h3 Home
+            -var items = ['Home Portfolio','Home Agency','Home Architecture']
+            -var links = ['#','#','#']
+                each item, key in items 
+                    a(href=links[key])=item
+        .__footer-menu 
+            h3 Portfolio
+            -var items = ['Masonry Portfolio','Grid Portfolio','Metro Portfolio','Service Details']
+            -var links = ['#','#','#','#']
+                each item, key in items 
+                    a(href=links[key])=item
+        .__footer-menu 
+            h3 Blog
+            -var items = ['Blog Style 1','Blog Style 2','Blog Style 3','Licensing']
+            -var links = ['#','#','#']
+                each item, key in items 
+                    a(href=links[key])=item
+        .__footer-copy 
+            p © Anow. All Rights Reserved 2022 — Designed by 
+            p.__txt-white 128.digital.
+            p Powered by Webflow

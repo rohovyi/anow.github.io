@@ -1,0 +1,20 @@
+nav.__nav
+    .__nav-logo: span anow
+    .__nav-links
+        - var items = ['demos', 'about us', 'portfolio', 'team','news','contact','other pages']
+        - var links = ['demos', 'about-us', 'portfolio', 'team','news','contact','other-pages']
+            each item, key in items 
+                if item === 'demos'
+                    a.__nav-item.__nav-item-active(href=links[key] data-link=links[key] target='_blank')=item
+                else
+                    a.__nav-item(href=links[key] data-link=links[key] target='_blank')=item
+    .__nav-collapse.__nav-menu_button
+        .__nav-menu_lines
+    .__nav_overlay
+    
+    //- .__nav-links
+        - var items = ['demos', 'about us', 'portfolio', 'team','news','contact','other pages']
+        - var links = ['demos', 'about-us', 'portfolio', 'team','news','contact','other-pages']
+            each item, key in items 
+                if item === 'About'
+                    a.__nav-item.__nav-item-active(href='#' data-link=links[key])=item

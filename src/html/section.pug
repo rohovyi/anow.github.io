@@ -1,0 +1,122 @@
+section.about
+    span.__ttl-absolute about
+    .container 
+        span.__ttl-sub About us
+        h1.__ttl Ultimate experiences with story, emotion and purpose
+        p.__txt-black Quisque. Maecenas. Eros mus. Hymenaeos eros. Nisi mauris et adipiscing. Aliquam class bibendum
+        p.__txt-light Quisque. Maecenas. Eros mus. Hymenaeos eros. Nisi mauris et adipisc iquam class bibendum non mattis fusceut perspiciatis undeuisque. Maecenas. Eros mus. Hymenaeos eros. Nisi mauris et adipiscing. Aliquam class bibendum mattis fusceut persecenas. Eros mus
+    .container 
+        img.__img(src="@img/corridor.png" alt="corridor")
+        .__txt-quote
+            p “Our mission is to produce the highest quality work for every clients, on every project with full of energy we have”
+        .__txt-signature
+            span.__txt-signature-name Frankie Kao
+            p.__txt-signature-position art director pao
+    .container 
+        ul
+            li: figure
+                img.__img.svg-lamp-dims(src="@img/icons/icons.svg#lamp" alt="lamp")
+                figcaption 
+            li: h3 digital solutions
+            li: p If you need to redesign your new project, new visual strategy, ux structure or you do have some cool ideas for collaboration
+        ul
+            li: figure
+                img.__img.svg-hole-dims(src="@img/icons/icons.svg#hole" alt="hole")
+                figcaption 
+            li: h3 creative strategy
+            li: p If you need to redesign your new project, new visual strategy, ux structure or you do have some cool ideas for collaboration
+        ul
+            li: figure
+                img.__img.svg-speed-dims(src="@img/icons/icons.svg#speed" alt="speed")
+                figcaption 
+            li: h3 integrated marketing
+            li: p If you need to redesign your new project, new visual strategy, ux structure or you do have some cool ideas for collaboration
+    .container 
+section.works
+    span.__ttl-absolute works
+    .container
+        span.__ttl-sub Latest works
+        h1.__ttl Take a look around our portfolio.
+        .__space
+        .__btn-box
+            a(href="#").__btn.__btn-orange View More
+    .container 
+        figure
+            img(src="@img/package.png" alt="package")
+            figcaption Crazy Max 
+                input#chek0(type="checkbox" name="chek0")
+        figure
+            img(src="@img/waves.png" alt="waves")
+            figcaption Stylish House
+                input#chek1(type="checkbox" name="chek1") 
+        figure
+            img(src="@img/bgimg.png" alt="bgimg")
+            figcaption Oblique House
+                input#chek2(type="checkbox" name="chek2") 
+        figure
+            img(src="@img/letters.png" alt="letters")
+            figcaption Differents
+                input#chek3(type="checkbox" name="chek3") 
+        figure
+            img(src="@img/package.png" alt="package")
+            figcaption Bag 
+                input#chek4(type="checkbox" name="chek4")
+    .container
+        span.__ttl-sub Our skills
+        h1.__ttl Modern digital creative agency
+        p.__txt-light If you need to redesign your new project, new visual strategy, ux structure or you do have some cool ideas for collaboration
+        .__progress
+            label(for="illustration") illustration
+            progress#illustration(max="100" value="90") 90%
+            label(for="web_design") web design
+            progress#web_design(max="100" value="80") 90%
+            label(for="development") development
+            progress#development(max="100" value="95") 90%
+    .container 
+        span.__ttl-sub Our team
+        h1.__ttl Meet our awesome team
+        .__box
+            -var img = ['box0','box1','box2','box3','box4','box5']
+            -var title = ['Anna Brown','Andy Crown','Katy necker','Margo Kesslin','Kanye Jones','Marta White']
+            -var text = ['Creative Director','SEO manager','Designer','Developer','Art Director','Tester']
+                each item, key in img
+                    figure 
+                        img.__img(src='@img/'+img[key]+'.png' alt="box0")
+                        figcaption 
+                            p.__ttl-white=title[key]
+                            p.__txt-white=text[key]
+            a(href="#").__btn.__btn-orange Start
+section.testimonials
+    .container
+        h1.__ttl-relative testimonials
+        p What is your attitude as a small town businessman when it comes to advertising or taking help of an advertising design. What is your attitude as a small town businessman when it comes to advertising or taking help of an advertising design.
+        .__author
+            img.__img(src="@img/icons/icons.svg#avatar" alt="lamp")
+            span.__author-name Sophie Nguyen
+            span.__author-position CEO
+section.boxForm
+    .container
+        span.__ttl-sub the daily planet
+        h1.__ttl Our interactive news
+        .__box
+            -var img = ['mount','girl','bike']
+            -var keywords = ['lifestyle design','lifestyle design','lifestyle']
+            -var date =['April 28, 2022','April 28, 2022','April 28, 2022']
+            -var text = ['insights from interviewing the community','excelent company and opportunities','ways to increase your website']
+            -var link =['#','#','#']
+                each item, key in img
+                    .__card 
+                        img.__card-img(src='@img/'+img[key]+'.png' alt=img[key])
+                        .__card-data
+                            .__card-data-keywords=keywords[key]
+                            .__card-data-date=date[key]
+                        p.__card-text=text[key]
+                        a.__card-link(href=link[key]) view more
+    .container 
+        address.__box-info 
+            span.__txt-light address 
+            span.__card-text 14 tottenham road, london, england 
+            span.__txt-light information
+            span.__card-text info@yourdomain.com
+            span.__card-text (+68) 12004509
+        include form

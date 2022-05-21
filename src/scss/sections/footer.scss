@@ -1,0 +1,87 @@
+footer {
+    background    : #111111;
+    color         : white;
+    padding-bottom: 5rem;
+
+    .container {
+        display: -ms-grid;
+        display: grid;
+    }
+
+    a {
+        color: #BABABA;
+
+        &:hover,
+        &:focus {
+            color: $color-active;
+        }
+    }
+}
+
+.__footer {
+
+    &-logo {
+        display    : -ms-grid;
+        display    : grid;
+        place-items: center start;
+
+        span {
+            font-size  : 40px;
+            line-height: 52px;
+        }
+
+        address {
+            display      : -webkit-box;
+            display      : -ms-flexbox;
+            display      : flex;
+            place-items  : center center;
+            -ms-flex-wrap: wrap;
+            flex-wrap    : wrap;
+            font-family  : $ff__open_sans;
+            font-style   : normal;
+            font-size    : 14px;
+            line-height  : 23px;
+            color        : darken($color: white, $amount: 40);
+
+            a {
+                color: darken($color: white, $amount: 40);
+            }
+        }
+    }
+
+    &-menu {
+        display    : -ms-grid;
+        display    : grid;
+        white-space: nowrap;
+
+        a {
+            font-size  : 14px;
+            line-height: 20px;
+        }
+    }
+
+    &-copy {
+        -ms-grid-column-span: 4;
+        grid-column         : span 4;
+        display             : -webkit-box;
+        display             : -ms-flexbox;
+        display             : flex;
+        -webkit-box-pack    : center;
+        -ms-flex-pack       : center;
+        justify-content     : center;
+        -webkit-box-align   : center;
+        -ms-flex-align      : center;
+        align-items         : center;
+        -ms-flex-wrap       : wrap;
+        flex-wrap           : wrap;
+        font-size           : 15px;
+        line-height         : 30px;
+        letter-spacing      : 0.30000001192092896px;
+        text-align          : center;
+        color               : #BABABA;
+
+        p.__txt-white::before {
+            content: '\00a0';
+        }
+    }
+}
