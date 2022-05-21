@@ -1,5 +1,12 @@
 .vscode
 
-/dist
+/src
 /node_modules
 /gulp
+
+.gitignore
+LICENSE
+README.md
+gulpfile.js
+package-lock.json
+package.json
